@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { useWeb3Modal, useWeb3ModalAccount } from "@web3modal/ethers/react";
-import useContract from "../../../hooks/useContracts";
 import axios from "axios";
 import "./navbar.css";
 

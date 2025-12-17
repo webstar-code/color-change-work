@@ -21,7 +21,6 @@ const Invest = () => {
   const [activeTab, setActiveTab] = useState(1);
   const [amount, setAmount] = useState(0);
   const [inviter, setInviter] = useState("");
-  const [data, setData] = useState(null);
   const [navData, setNavdata] = useState({
     activeUsers: 0,
     stakedValue: 0,
@@ -125,17 +124,6 @@ const Invest = () => {
   };
 
   useEffect(() => {
-    const fetchData = () => {
-      axios
-        .get("https://sayo-profit.vercel.app/change-value")
-        .then((response) => {
-          setData(response.data);
-        })
-        .catch((error) => {
-          console.error("Error fetching data:", error);
-        });
-    };
-
     const fetchNavData = () => {
       axios
         .get("https://presale-backend-nine.vercel.app/api/v1/getValues")
@@ -149,10 +137,6 @@ const Invest = () => {
         });
     };
     fetchNavData();
-    fetchData();
-    const intervalId = setInterval(fetchData, 1000);
-
-    return () => clearInterval(intervalId);
   }, []);
 
   const handleWithdraw = async () => {
