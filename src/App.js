@@ -2,34 +2,16 @@ import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Invest from "./pages/Invest";
 import Referrals from "./pages/Referrals";
-import MobileSideBar from "./pages/components/Sidebar/MobileSideBar";
 
 import { createWeb3Modal, defaultConfig } from "@web3modal/ethers/react";
-import Calculator from "./pages/calculator";
 import ChangedValue from "./pages/valueChanged/ChangedValue";
-import { useEffect, useState } from "react";
-import toast, { Toaster } from "react-hot-toast";
+import { useState } from "react";
+import { Toaster } from "react-hot-toast";
 
 // 1. Get projectId
 const projectId = "6bf42b45eaf1cf5dad51ca5109dcf569";
 
 // 2. Set chains
-const mainnet = {
-  chainId: 1,
-  name: "Ethereum",
-  currency: "ETH",
-  explorerUrl: "https://etherscan.io",
-  rpcUrl: "https://cloudflare-eth.com",
-};
-
-const sepolia = {
-  chainId: 11155111,
-  name: "Sepolia",
-  currency: "ETH",
-  explorerUrl: "https://rpc.sepolia.org",
-  rpcUrl: "https://1rpc.io/sepolia",
-};
-
 const bsc = {
   chainId: 56,
   name: "Binance Smart Chain",

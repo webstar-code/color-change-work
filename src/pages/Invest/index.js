@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Layout from "../components/Layout/Layout";
 import "./invest.css";
-import { MdArrowOutward } from "react-icons/md";
-import { IoIosArrowDown } from "react-icons/io";
 import Eth from "../../assets/tether.svg";
 import useContract from "../../hooks/useContracts";
 import { useWeb3ModalAccount } from "@web3modal/ethers/react";
@@ -19,19 +17,15 @@ const override = {
   borderColor: "red",
 };
 
-const Invest = ({}) => {
-  const [isDetailsVisible, setIsDetailsVisible] = useState(false);
+const Invest = () => {
   const [activeTab, setActiveTab] = useState(1);
   const [amount, setAmount] = useState(0);
   const [inviter, setInviter] = useState("");
   const [data, setData] = useState(null);
-  const [isloading, setIsLoading] = useState(true);
   const [navData, setNavdata] = useState({
     activeUsers: 0,
     stakedValue: 0,
   });
-
-  const [investData, setInvestData] = useState({});
 
   const [balance, setBalance] = useState(0);
   const [myReward, setMyReward] = useState(0);
@@ -40,7 +34,7 @@ const Invest = ({}) => {
 
   const [chnage, setChange] = useState(true);
   let [loading, setLoading] = useState(false);
-  let [color, setColor] = useState("#008080");
+  let [color] = useState("#008080");
 
   const {
     invest,
@@ -48,25 +42,10 @@ const Invest = ({}) => {
     getTokenBalance,
     reward,
     withdraw,
-    getInvestData,
   } = useContract();
   const { address, isConnected } = useWeb3ModalAccount();
 
   console.log("inviter", inviter);
-
-  useEffect(() => {
-    if (isConnected) {
-      const _getInvestData = async () => {
-        const data = await getInvestData();
-        setInvestData(data);
-      };
-      try {
-        _getInvestData();
-      } catch (err) {
-        console.log(err);
-      }
-    }
-  }, [isConnected]);
 
   // useEffect(() => {
   //   if (address) {
@@ -98,7 +77,7 @@ const Invest = ({}) => {
         console.log(err.message);
       }
     }
-  }, [address, chnage]);
+  }, [address, chnage, isConnected, myInvestment, getTokenBalance]);
 
   useEffect(() => {
     const _reward = async () => {
@@ -112,11 +91,7 @@ const Invest = ({}) => {
       }, 1000);
       return () => clearInterval(interval);
     }
-  }, [address]);
-
-  const toggleDetails = () => {
-    setIsDetailsVisible(!isDetailsVisible);
-  };
+  }, [address, isConnected, reward]);
 
   const handleTabClick = (tabNumber) => {
     setActiveTab(tabNumber);
@@ -179,11 +154,6 @@ const Invest = ({}) => {
 
     return () => clearInterval(intervalId);
   }, []);
-
-  let lastItem = null;
-  if (data && data.length > 0) {
-    lastItem = data[data.length - 1];
-  }
 
   const handleWithdraw = async () => {
     if (!isConnected) return toast.error("Please connect your wallet");

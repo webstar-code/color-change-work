@@ -5,24 +5,11 @@ import axios from "axios";
 import "./navbar.css";
 
 const Navbar = ({ navData }) => {
-  const [investData, setInvestData] = useState(null);
   const [data, setData] = useState(null);
 
   // 4. Use modal hook
   const { open } = useWeb3Modal();
-  const { address, chainId, isConnected } = useWeb3ModalAccount();
-  const { getInvestData } = useContract();
-
-  useEffect(() => {
-    const _investDat = async () => {
-      if (isConnected) {
-        const data = await getInvestData();
-        setInvestData(data);
-      }
-    };
-
-    _investDat();
-  });
+  const { address, isConnected } = useWeb3ModalAccount();
 
   useEffect(() => {
     const fetchData = () => {

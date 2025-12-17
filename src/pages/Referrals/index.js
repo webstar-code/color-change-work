@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Layout from "../components/Layout/Layout";
 import "./referrals.css";
 import useContract from "../../hooks/useContracts";
 import { useWeb3ModalAccount } from "@web3modal/ethers/react";
@@ -17,12 +16,11 @@ const Referrals = () => {
 
   const [myRef, setMyRef] = useState(null);
   const [copy, setCopy] = useState(false);
-  const [level, setLevel] = useState(0);
-  const [chnage, setChange] = useState(false);
+  const [chnage] = useState(false);
   let [loading, setLoading] = useState(false);
-  let [color, setColor] = useState("#00FF88");
+  let [color] = useState("#00FF88");
 
-  const { myReferral, getReferralLevel, claimReferralRewards } = useContract();
+  const { claimReferralRewards } = useContract();
   const { address, isConnected } = useWeb3ModalAccount();
 
   useEffect(() => {
@@ -43,20 +41,15 @@ const Referrals = () => {
             reward: 0,
             refer_persons: 0,
           });
-          setLevel(0);
         }
       }
     };
     _referral();
-  }, [address, chnage]);
+  }, [address, chnage, isConnected]);
 
   // make my ref with address + url
   useEffect(() => {
     if (address) {
-      // const get url
-      let url = window.location.href;
-      // remove /referrals from url
-      url = url.replace("/referrals", "");
       const ref = `${address}`;
       setMyRef(ref);
     }

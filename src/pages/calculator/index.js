@@ -4,8 +4,6 @@ import { useEffect, useState } from "react";
 import "./Calculator.css";
 
 function Calculator() {
-  const [yourPlan, setYourPlan] = useState(false);
-
   const [stakingAmount, setStakingAmount] = useState("");
   const [stakingPeriod, setStakingPeriod] = useState("");
   const [totalPrice, setTotalPrice] = useState(0);
@@ -21,7 +19,7 @@ function Calculator() {
     } else if (stakingAmount >= 50 && stakingAmount <= 250) {
       setProfitPercentage(0.5);
 
-      if (!stakingPeriod == "") {
+      if (stakingPeriod !== "") {
         if (compoundEarnings) {
           const initialValue = Number(stakingAmount);
           const stakPeriod = Number(stakingPeriod);
@@ -31,7 +29,7 @@ function Calculator() {
             initialValue;
 
           console.log(earningComputed);
-          if (!(stakPeriod <= 0 && stakPeriod == 1)) {
+          if (!(stakPeriod <= 0 && stakPeriod === 1)) {
             setProfit(earningComputed);
             // setProfit(profitBefore + Number("0.0" + earningComputed.toFixed(0)));
           }
@@ -46,7 +44,7 @@ function Calculator() {
       }
     } else {
       setProfitPercentage(0.7);
-      if (!stakingPeriod == "") {
+      if (stakingPeriod !== "") {
         if (compoundEarnings) {
           const initialValue = Number(stakingAmount);
           const stakPeriod = Number(stakingPeriod);
@@ -56,7 +54,7 @@ function Calculator() {
             initialValue;
 
           console.log(earningComputed);
-          if (!(stakPeriod <= 0 && stakPeriod == 1)) {
+          if (!(stakPeriod <= 0 && stakPeriod === 1)) {
             setProfit(earningComputed);
             // setProfit(profitBefore + Number("0.0" + earningComputed.toFixed(0)));
           }
