@@ -1,0 +1,195 @@
+.vOLPD {
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    transform: translate(-50%, 50%);
+    border-radius: 1000px;
+    background: linear-gradient(rgba(0, 255, 136, 0.4) -112.48%, rgba(0, 128, 128, 0.4) 99.99%);
+    filter: blur(6px);
+    height: 8px;
+    width: calc(100% - 32px);
+    z-index: 1;
+}
+.hjnXua {
+    padding: 24px 12px;
+    background-color: rgba(0, 255, 136, 0.05);
+}
+.UBwSK > * {
+    border-top: 1px solid rgba(0, 128, 128, 0.2);
+}
+.dlQWRi {
+    position: relative;
+    min-height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.grNOHG {
+    border-top: 1px solid rgba(0, 128, 128, 0.2);
+} 
+.gWUPBy {
+    position: relative;
+    width: calc(100% - 20px);
+    height: 10px;
+    background-color: rgba(0, 255, 136, 0.05);
+    z-index: 2;
+}
+.grNOHG::before {
+    border-bottom: 10px solid rgba(0, 255, 136, 0.05);
+}
+
+.cTFYJn {
+    position: absolute;
+    left: 0px;
+    right: unset;
+    height: 1px;
+    width: 14px;
+    top: 50%;
+    transform: translate(-85%, -50%) rotate(-45deg);
+    background-color: rgba(0, 128, 128, 0.3);
+    z-index: 2;
+}
+.gLmBdD {
+    position: absolute;
+    left: unset;
+    right: 0px;
+    height: 1px;
+    width: 14px;
+    top: 50%;
+    transform: translate(85%, -50%) rotate(45deg);
+    background-color: rgba(0, 128, 128, 0.3);
+    z-index: 2;
+}
+.grNOHG::after {
+    border-bottom: 10px solid rgba(0, 255, 136, 0.05);
+}
+.gWUPBy::after {
+    position: absolute;
+    content: "";
+    top: 0px;
+    right: -10px;
+    width: 0px;
+    height: 0px;
+    border-right: 10px solid transparent;
+} 
+.gWUPBy::before {
+    position: absolute;
+    content: "";
+    top: 0px;
+    left: -10px;
+    width: 0px;
+    height: 0px;
+    border-left: 10px solid transparent;
+}
+.hvQLqd {
+    border-bottom: 1px solid rgba(0, 128, 128, 0.2);
+}
+
+.hvQLqd::before {
+    border-top: 10px solid rgba(0, 255, 136, 0.05);
+}
+
+.gWUPBy::before {
+    position: absolute;
+    content: "";
+    top: 0px;
+    left: -10px;
+    width: 0px;
+    height: 0px;
+    border-left: 10px solid transparent;
+}
+ 
+.eTNqqe {
+    position: absolute;
+    left: 0px;
+    right: unset;
+    height: 1px;
+    width: 14px;
+    top: 50%;
+    transform: translate(-85%, -50%) rotate(45deg);
+    background-color: rgba(0, 128, 128, 0.3);
+    z-index: 2;
+}
+.gVHaXq {
+    position: absolute;
+    left: unset;
+    right: 0px;
+    height: 1px;
+    width: 14px;
+    top: 50%;
+    transform: translate(85%, -50%) rotate(-45deg);
+    background-color: rgba(0, 128, 128, 0.3);
+    z-index: 2;
+}
+.hvQLqd::after {
+    border-top: 10px solid rgba(0, 255, 136, 0.05);
+}
+.gWUPBy::after {
+    position: absolute;
+    content: "";
+    top: 0px;
+    right: -10px;
+    width: 0px;
+    height: 0px;
+    border-right: 10px solid transparent;
+}
+.gInJTp {
+    width: 100%;
+    height: 100%;
+    flex: 1 1 0%;
+    background: rgba(0, 255, 136, 0.05);
+    border-right: 1px solid rgba(0, 128, 128, 0.2);
+    border-left: 1px solid rgba(0, 128, 128, 0.2);
+}
+.ejlXWS {
+    width: 180px;
+    height: 180px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 255, 136, 0.4) 0%, rgba(0, 128, 128, 0) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    font-weight: 500;
+}
+.kBRKUV {
+    width: fit-content;
+    max-width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: transparent;
+}
+.faZbtb {
+    height: 60px;
+    font-size: 18px;
+}
+.lmNGEv {
+    max-width: 100% !important;
+}
+.hbpQIt:hover:not(:disabled) {
+    border-image-source: linear-gradient(-90deg, #00FF88, #008080);
+    scale: 1.01;
+}
+.dAmSWC {
+    display: flex;
+    width: 61px;
+    height: 43px;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0, 128, 128, 0.3);
+    transition: all 0.3s ease 0s;
+}
+.coKMcz input {
+     display: block;
+    height: 43px;
+    width: 309px;
+     background: none;
+    border: 1px solid rgba(0, 128, 128, 0.3);
+    color: #333;
+    padding-left: 10px;
+}
+.dLmlyL input {
+    width: 100%;
+}

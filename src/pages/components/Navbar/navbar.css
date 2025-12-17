@@ -1,0 +1,5 @@
+.nav-gradient{
+        background: -webkit-linear-gradient(#00FF88, #008080);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}

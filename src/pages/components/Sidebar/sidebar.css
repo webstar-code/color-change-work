@@ -1,0 +1,97 @@
+.gInJTp {
+    width: 100%;
+    height: 100%;
+    flex: 1 1 0%;
+    background: rgba(0, 255, 136, 0.05);
+    border-right: 1px solid rgba(0, 128, 128, 0.2);
+    border-left: 1px solid rgba(0, 128, 128, 0.2);
+}
+
+.crTtFs {
+    width: 100%;
+    height: 68;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    color: #333;
+    font-size: 16px;
+    font-weight: 385;
+    text-transform: uppercase;
+}
+
+.jujpfO {
+    border-top: 1px solid rgba(0, 128, 128, 0.2);
+}
+.iCDohZ {
+    border-radius: 6px 0px 0px 6px;
+    background: rgba(0, 255, 136, 0.1);
+    /* border-right: 1px solid white; */
+    color: #008080;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 234px;
+    height: 40px;
+    cursor: pointer;
+    font-weight: 800;
+}
+.gONgRy {
+    width: 100%;
+    max-width: 130px;
+    height: 40px;
+    min-width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-width: 1px;
+    border-style: solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(90deg, #00FF88, #008080);
+    background: rgba(0, 255, 136, 0.1);
+    transition: all 0.3s ease 0s;
+}
+.ePfABc {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-width: 1px;
+    border-style: solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(90deg, rgb(255, 255, 255), rgb(100, 67, 182));
+    transition: all 0.3s ease 0s;
+}
+.selectti-gradient{
+    background: linear-gradient(90deg, #00FF88 0%, #00E676 35%, #008080 100%);
+}
+
+.hbpQIt {
+    width: 100%;
+    max-width: 280px;
+    height: 50px;
+    min-width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-width: 1px;
+    border-style: solid;
+    border-color: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(90deg, #00FF88, #008080);
+    background: rgba(0, 255, 136, 0.1);
+    transition: all 0.3s ease 0s;
+}
+
+.eePRrB {
+    transition: all 0.3s ease 0s;
+    background: linear-gradient(90deg, #00FF88 0%, #00E676 50%, #008080 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    font-size: 18px;
+}
