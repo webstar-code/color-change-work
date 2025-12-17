@@ -262,7 +262,7 @@ const Invest = () => {
                           </label>
                         </div>
                       </div>
-                      <ul
+                      {/* <ul
                         style={{
                           display: "flex",
                           flexDirection: "column",
@@ -286,7 +286,7 @@ const Invest = () => {
                           need to have the following in your wallet.. $ 0.0020
                           BNB ($1 USD)
                         </li>
-                      </ul>
+                      </ul> */}
                       <button
                         scale="lg"
                         className="sc-4142778f-0 sc-4142778f-3 hbpQIt lmNGEv"
@@ -362,7 +362,7 @@ const Invest = () => {
                           </p>
                         </button>
                       </div>
-                      <ul
+                      {/* <ul
                         style={{
                           display: "flex",
                           flexDirection: "column",
@@ -386,7 +386,7 @@ const Invest = () => {
                           need to have the following in your wallet.. $ 0.0020
                           BNB ($1 USD)
                         </li>
-                      </ul>
+                      </ul> */}
                       <hr className="sc-4ecb9fdc-0 eqALCG" />
                       <div className="flex flex-row">
                         <p className="grow-[1] text-[18px] text-[#9B9BA2]">
