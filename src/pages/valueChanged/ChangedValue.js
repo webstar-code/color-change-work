@@ -47,7 +47,7 @@ function ChangedValue() {
 
   return (
     <>
-      <div className="w-full flex items-center justify-center h-[100vh] bg-white">
+      <div className="w-full flex items-center justify-center h-[100vh] bg-gradient-to-br from-[#0a0e1a] via-[#1a1f2e] to-[#0f1419]">
         <div className="">
           <form onSubmit={handleSubmit} className="changedForm">
             <div>

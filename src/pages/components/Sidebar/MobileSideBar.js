@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import LogoWebsite from "../../../assets/logo-white.jpg";
+import LogoWebsite from "../../../assets/logo.png";
 import { TbMenu } from "react-icons/tb";
 import { Link } from "react-router-dom";
 import { useWeb3Modal, useWeb3ModalAccount } from "@web3modal/ethers/react";
@@ -13,7 +13,7 @@ const MobileSideBar = () => {
     setMenuOpen(!isMenuOpen);
   };
   return (
-    <div className="lg:hidden flex items-center justify-between text-gray-800">
+    <div className="lg:hidden flex items-center justify-between text-gray-100">
       <div>
         <img
           src={LogoWebsite}
@@ -41,14 +41,14 @@ const MobileSideBar = () => {
           onClick={toggleMenu}
         >
           {isMenuOpen ? (
-            <TbMenu className="text-gray-800 w-8 h-8 font-thin" />
+            <TbMenu className="text-gray-100 w-8 h-8 font-thin" />
           ) : (
-            <TbMenu className="text-gray-800 w-8 h-8 font-thin" />
+            <TbMenu className="text-gray-100 w-8 h-8 font-thin" />
           )}
         </button>
 
         {isMenuOpen && (
-          <div className="bg-white  absolute top-0 left-0 text-black h-[100vh] z-30 w-1/2 p-4">
+          <div className="bg-[rgba(26,31,46,0.95)] backdrop-blur-md absolute top-0 left-0 text-gray-100 h-[100vh] z-30 w-1/2 p-4 border-r border-[rgba(0,255,136,0.3)]">
             <ul className="flex flex-col gap-4">
               <div className="flex justify-between">
                 <div>
@@ -66,32 +66,32 @@ const MobileSideBar = () => {
                   X
                 </span>
               </div>
-              <Link to="/" className="font-bold text-start text-[#17144D]">
+              <Link to="/" className="font-bold text-start text-[#00FF88] hover:text-[#00E676] transition-colors">
                 ENERGY GROWTH
                 <br />
-                 PAMM FOUND
+                 PAMM FOUND
               </Link>
               <Link
                 to="https://teller-usd.gitbook.io/sayoprofits/"
-                className="font-bold text-[#17144D] capitalize"
+                className="font-bold text-[#00FF88] capitalize hover:text-[#00E676] transition-colors"
               >
                 WHITEPAPER
               </Link>
               <Link
                 to="https://x.com/SayoProfits?t=sAR8HlJuPLov8wRvU2CxEA&s=08"
-                className="font-bold text-[#17144D]"
+                className="font-bold text-[#00FF88] hover:text-[#00E676] transition-colors"
               >
                 TWITTER
               </Link>
               <Link
                 to="https://t.me/SayoProfits"
-                className="font-bold text-[#17144D]"
+                className="font-bold text-[#00FF88] hover:text-[#00E676] transition-colors"
               >
                 TELEGRAM
               </Link>
               <Link
                 to="https://youtube.com/@SayoProfits"
-                className="font-bold text-[#17144D]"
+                className="font-bold text-[#00FF88] hover:text-[#00E676] transition-colors"
               >
                 YOUTUBE
               </Link>

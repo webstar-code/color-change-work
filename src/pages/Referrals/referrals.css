@@ -7,14 +7,14 @@
 }
 
 .cIKxLG {
-    border-top: 1px solid rgba(0, 128, 128, 0.2);
+    border-top: 1px solid rgba(0, 255, 136, 0.3);
 }
 
 .kLMfbJ {
     position: relative;
     width: calc(100% - 32px);
     height: 16px;
-    background-color: rgba(0, 255, 136, 0.05);
+    background-color: rgba(0, 255, 136, 0.1);
     z-index: 2;
 }
 
@@ -28,19 +28,19 @@
 }
 
 .leUcmd {
-    border-bottom: 1px solid rgba(0, 128, 128, 0.2);
+    border-bottom: 1px solid rgba(0, 255, 136, 0.3);
 }
 
 .kLMfbJ {
     position: relative;
     width: calc(100% - 32px);
     height: 16px;
-    background-color: rgba(0, 255, 136, 0.05);
+    background-color: rgba(0, 255, 136, 0.1);
     z-index: 2;
 }
 
 .cIKxLG::before {
-    border-bottom: 16px solid rgba(0, 255, 136, 0.05);
+    border-bottom: 16px solid rgba(0, 255, 136, 0.1);
 }
 
 .kLMfbJ::before {
@@ -61,7 +61,7 @@
     width: 23px;
     top: 50%;
     transform: translate(-85%, -50%) rotate(-45deg);
-    background-color: rgba(0, 128, 128, 0.3);
+    background-color: rgba(0, 255, 136, 0.5);
     z-index: 2;
 }
 
@@ -73,12 +73,12 @@
     width: 23px;
     top: 50%;
     transform: translate(85%, -50%) rotate(45deg);
-    background-color: rgba(0, 128, 128, 0.3);
+    background-color: rgba(0, 255, 136, 0.5);
     z-index: 2;
 }
 
 .cIKxLG::after {
-    border-bottom: 16px solid rgba(0, 255, 136, 0.05);
+    border-bottom: 16px solid rgba(0, 255, 136, 0.1);
 }
 
 .kLMfbJ::after {
@@ -116,7 +116,7 @@
 }
 
 .grjaPy p:last-child {
-    color: #333;
+    color: #E6E6E6;
     font-size: 32px;
     font-weight: 500;
     line-height: 120%;
@@ -124,19 +124,19 @@
 }
 
 .leUcmd {
-    border-bottom: 1px solid rgba(0, 128, 128, 0.2);
+    border-bottom: 1px solid rgba(0, 255, 136, 0.3);
 }
 
 .kLMfbJ {
     position: relative;
     width: calc(100% - 32px);
     height: 16px;
-    background-color: rgba(0, 255, 136, 0.05);
+    background-color: rgba(0, 255, 136, 0.1);
     z-index: 2;
 }
 
 .leUcmd::before {
-    border-top: 16px solid rgba(0, 255, 136, 0.05);
+    border-top: 16px solid rgba(0, 255, 136, 0.1);
 }
 
 .kLMfbJ::before {
@@ -157,7 +157,7 @@
     width: 23px;
     top: 50%;
     transform: translate(-85%, -50%) rotate(45deg);
-    background-color: rgba(0, 128, 128, 0.3);
+    background-color: rgba(0, 255, 136, 0.5);
     z-index: 2;
 }
 
@@ -169,23 +169,23 @@
     width: 23px;
     top: 50%;
     transform: translate(85%, -50%) rotate(-45deg);
-    background-color: rgba(0, 128, 128, 0.3);
+    background-color: rgba(0, 255, 136, 0.5);
     z-index: 2;
 }
 
 .leUcmd::after {
-    border-top: 16px solid rgba(0, 255, 136, 0.05);
+    border-top: 16px solid rgba(0, 255, 136, 0.1);
 }
 
 .leUcmd {
-    border-bottom: 1px solid rgba(0, 128, 128, 0.2);
+    border-bottom: 1px solid rgba(0, 255, 136, 0.3);
 }
 
 .kLMfbJ {
     position: relative;
     width: calc(100% - 32px);
     height: 16px;
-    background-color: rgba(0, 255, 136, 0.05);
+    background-color: rgba(0, 255, 136, 0.1);
     z-index: 2;
 }
 
@@ -215,7 +215,7 @@
 }
 
 .fpXvEA {
-    color: #333;
+    color: #E6E6E6;
     font-size: 24px;
     font-weight: 400;
     line-height: 150%;
@@ -244,8 +244,13 @@
     border-image-repeat: initial;
     border-image-slice: 1;
     border-image-source: linear-gradient(90deg, #00FF88, #008080);
-    background: rgba(0, 255, 136, 0.1);
+    background: rgba(0, 255, 136, 0.15);
     transition: all 0.3s ease 0s;
+    box-shadow: 0 0 15px rgba(0, 255, 136, 0.25);
+}
+.hbpQIt:hover:not(:disabled) {
+    box-shadow: 0 0 25px rgba(0, 255, 136, 0.5);
+    background: rgba(0, 255, 136, 0.25);
 }
 
 .eePRrB {
@@ -305,7 +310,7 @@
 }
 
 .fpXvEA {
-    color: #333;
+    color: #E6E6E6;
     font-size: 24px;
     font-weight: 400;
     line-height: 150%;
@@ -348,21 +353,22 @@
 
 
 .eQkJa-d {
-    background: rgba(0, 255, 136, 0.05);
+    background: rgba(0, 255, 136, 0.08);
     display: flex;
     height: 43px;
     padding: 12px;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    color: rgb(155, 155, 162);
+    color: rgb(200, 200, 210);
     text-overflow: ellipsis;
     font-size: 18px;
     line-height: 120%;
+    backdrop-filter: blur(10px);
 }
 
 .ilKPxf {
-    border: 1px solid rgba(0, 128, 128, 0.3);
+    border: 1px solid rgba(0, 255, 136, 0.5);
     display: flex;
     width: fit-content;
     height: 43px;
@@ -370,11 +376,16 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    color: #333;
+    color: #E6E6E6;
     text-overflow: ellipsis;
     font-size: 18px;
     transition: all 0.2s ease-in-out 0s;
     cursor: pointer;
+    background: rgba(0, 255, 136, 0.1);
+}
+.ilKPxf:hover:not(:disabled) {
+    background: rgba(0, 255, 136, 0.2);
+    box-shadow: 0 0 10px rgba(0, 255, 136, 0.3);
 }
 
 .ilKPxf:disabled {
@@ -417,7 +428,8 @@
     justify-content: space-around;
     gap: 8px;
     align-self: stretch;
-    background: rgba(0, 255, 136, 0.1);
+    background: rgba(0, 255, 136, 0.15);
+    box-shadow: 0 0 10px rgba(0, 255, 136, 0.2);
 }
 
 .iCyQuZ {
@@ -427,7 +439,7 @@
 }
 
 .hEPdtl {
-    color: #333;
+    color: #E6E6E6;
     font-size: 18px;
     text-transform: uppercase;
     white-space: nowrap;

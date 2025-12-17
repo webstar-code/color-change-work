@@ -20,7 +20,7 @@ const Referrals = () => {
   const [level, setLevel] = useState(0);
   const [chnage, setChange] = useState(false);
   let [loading, setLoading] = useState(false);
-  let [color, setColor] = useState("#008080");
+  let [color, setColor] = useState("#00FF88");
 
   const { myReferral, getReferralLevel, claimReferralRewards } = useContract();
   const { address, isConnected } = useWeb3ModalAccount();

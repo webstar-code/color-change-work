@@ -1,13 +1,13 @@
 import React from "react";
 import "./sidebar.css";
 import { Link } from "react-router-dom";
-import LogoWebsite from "../../../assets/logo-white.jpg";
+import LogoWebsite from "../../../assets/logo.png";
 
 // import Icons from "../../../assets/home.0bf542fa.svg"
 
 const Sidebar = () => {
   return (
-    <div className="h-full text-gray-800 fixed mr-10 ">
+    <div className="h-full text-gray-100 fixed mr-10 ">
       <div class="sc-8a51e25a-1 iwULQu">
         <div class="sc-dfe9a692-0 cykrde">
           <div class="sc-995918ed-5 dlQWRi" style={{ width: "273px" }}>
@@ -24,7 +24,7 @@ const Sidebar = () => {
                     className="h-20 w-20 m-4 rounded-full shadow-xl"
                   />
                   <br />
-                  <p style={{ color: "#008080", fontWeight: "bold" }}>
+                  <p style={{ color: "#00FF88", fontWeight: "bold" }}>
                     Sayo Profits
                   </p>
                 </div>

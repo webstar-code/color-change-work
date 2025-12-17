@@ -206,7 +206,7 @@ const Invest = ({}) => {
     <>
       <MobileSideBar />
       <Layout navData={navData}>
-        <div className="lg:ml-5 text-gray-800 my-6 flex flex-col gap-6 sm:mr-0 md:mr-6">
+        <div className="lg:ml-5 text-gray-100 my-6 flex flex-col gap-6 sm:mr-0 md:mr-6">
           <div className="grid md:grid-cols-[1fr_1fr] grid-cols-1 gap-6">
             <div className="flex flex-col gap-6">
               <Calculator />
@@ -214,11 +214,11 @@ const Invest = ({}) => {
             {/* mkdfg */}
             <div className="flex flex-col gap-4">
               <div>
-                <div className="flex flex-row rounded-tl-[6px] rounded-tr-[6px] bg-white sc-24cebd8a-0 faZbtb shadow-md">
+                <div className="flex flex-row rounded-tl-[6px] rounded-tr-[6px] bg-[rgba(26,31,46,0.8)] sc-24cebd8a-0 faZbtb shadow-lg backdrop-blur-md border border-[rgba(0,255,136,0.2)]">
                   <button
                     className={`w-[50%] p-[10px] uppercase border-b-[1px] ${
                       activeTab === 1
-                        ? "border-[#008080] text-[#008080]"
+                        ? "border-[#00FF88] text-[#00FF88]"
                         : "border-transparent text-[#9B9BA2]"
                     }`}
                     onClick={() => handleTabClick(1)}
@@ -228,7 +228,7 @@ const Invest = ({}) => {
                   <button
                     className={`w-[50%] p-[10px] uppercase  ${
                       activeTab === 2
-                        ? "border-b-[1px] text-[#008080] border-[#008080]"
+                        ? "border-b-[1px] text-[#00FF88] border-[#00FF88]"
                         : "border-transparent text-[#9B9BA2]"
                     }`}
                     onClick={() => handleTabClick(2)}
@@ -248,7 +248,7 @@ const Invest = ({}) => {
                             <p className="text-[18px] text-[#9B9BA2]">
                               Available
                             </p>
-                            <p className="text-[18px] text-[#008080]">
+                            <p className="text-[18px] text-[#00FF88]">
                               {Number(balance).toFixed(3)}
                             </p>
                           </div>
@@ -257,7 +257,7 @@ const Invest = ({}) => {
                             <p className="text-[18px] text-[#9B9BA2]">
                               Deposited
                             </p>
-                            <p className="text-[18px] text-[#008080]">
+                            <p className="text-[18px] text-[#00FF88]">
                               {investAmount}
                             </p>
                           </div>
@@ -289,13 +289,13 @@ const Invest = ({}) => {
                           <button
                             className="sc-4142778f-2 dAmSWC"
                             onClick={handleMax}
-                            style={{ color: "#008080" }}
+                            style={{ color: "#00FF88" }}
                           >
                             MAX
                           </button>
                         </div>
                         <div className="flex flex-row items-center gap-[16px]">
-                          <p style={{ color: "#008080" }}>Refferal</p>
+                          <p style={{ color: "#00FF88" }}>Refferal</p>
                           <label
                             data-domain=""
                             className="sc-a9e872e3-0 sc-a9e872e3-1 coKMcz dLmlyL"
@@ -367,7 +367,7 @@ const Invest = ({}) => {
                           </p>
                           <p className="text-[18px] text-[#9B9BA2]">
                             Available:&nbsp;
-                            <span className="text-[#008080]">
+                            <span className="text-[#00FF88]">
                               {(
                                 Number(investAmount) + Number(myReward)
                               ).toFixed(5)}

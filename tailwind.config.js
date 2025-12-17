@@ -16,8 +16,9 @@ module.exports = {
           dark: '#006B6B',       // Darker teal
         },
         background: {
-          light: '#F5F5F5',      // Light gray background
-          DEFAULT: '#E5E5E5',    // Slightly darker gray
+          light: '#1a1f2e',      // Dark blue-gray background
+          DEFAULT: '#0a0e1a',    // Darker background
+          dark: '#0f1419',       // Darkest background
         }
       }
     },
